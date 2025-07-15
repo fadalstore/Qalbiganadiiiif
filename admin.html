@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Admin Panel</title></head>
+<body>
+  <h1>Admin Panel</h1>
+  <a href="/admin/add">➕ Qor Qoraal Cusub</a>
+  {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  {% else %}
+    <p>Wali qoraallo ma jiraan</p>
+  {% endfor %}
+</body>
+</html>

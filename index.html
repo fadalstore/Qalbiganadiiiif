@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Qalbiga Nadiifta</title></head>
+<body>
+  <h1>Ku soo dhawoow Qalbiga Nadiifta</h1>
+  {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  {% else %}
+    <p>Ma jiro qoraal wali 😢</p>
+  {% endfor %}
+  <hr>
+  <h3>Nagu Taageer $1 kaliya 💚</h3>
+  <p>📱 Telesom ZAAD: 634844506</p>
+</body>
+</html>
